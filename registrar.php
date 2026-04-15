@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set('America/El_Salvador'); // Establece la hora de El Salvador
 
-// ... el resto de tus requires e includes ...
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -49,7 +49,7 @@ if (isset($_POST['nie'])) {
                 $mail->Host       = 'smtp.gmail.com';
                 $mail->SMTPAuth   = true;
                 $mail->Username   = 'itsiindi718@gmail.com'; 
-                $mail->Password   = '********* ***********'; 
+                $mail->Password   = '********* ***********'; //colocar la contraseña de aplicacion aqui
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
                 $mail->Port       = 465;
                 $mail->CharSet    = 'UTF-8';
